@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: MyOpenGLProject1
+# Project: MyOpenGLProject2
 # Configurations: Debug
 # =============================================================================
 
@@ -39,48 +39,48 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Users/User/CLionProjects/function1OpenGl/cmake-build-debug/
+cmake_ninja_workdir = D$:/CLionProjects/function2OpenGl/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target MyOpenGLProject1
+# Object build statements for EXECUTABLE target MyOpenGLProject2
 
 
 #############################################
-# Order-only phony target for MyOpenGLProject1
+# Order-only phony target for MyOpenGLProject2
 
-build cmake_object_order_depends_target_MyOpenGLProject1: phony || .
+build cmake_object_order_depends_target_MyOpenGLProject2: phony || .
 
-build CMakeFiles/MyOpenGLProject1.dir/main.cpp.obj: CXX_COMPILER__MyOpenGLProject1_unscanned_Debug C$:/Users/User/CLionProjects/function1OpenGl/main.cpp || cmake_object_order_depends_target_MyOpenGLProject1
-  DEP_FILE = CMakeFiles\MyOpenGLProject1.dir\main.cpp.obj.d
-  FLAGS = -g -std=gnu++11 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/User/glfw-3.4.bin.WIN64/include -IC:/Users/User/freeglut/include
-  OBJECT_DIR = CMakeFiles\MyOpenGLProject1.dir
-  OBJECT_FILE_DIR = CMakeFiles\MyOpenGLProject1.dir
+build CMakeFiles/MyOpenGLProject2.dir/main.cpp.obj: CXX_COMPILER__MyOpenGLProject2_unscanned_Debug D$:/CLionProjects/function2OpenGl/main.cpp || cmake_object_order_depends_target_MyOpenGLProject2
+  DEP_FILE = CMakeFiles\MyOpenGLProject2.dir\main.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/User/glfw-3.4.bin.WIN64/include -IC:/Users/User/freeglut/include -ID:/CLionProjects/function2OpenGl/eigen
+  OBJECT_DIR = CMakeFiles\MyOpenGLProject2.dir
+  OBJECT_FILE_DIR = CMakeFiles\MyOpenGLProject2.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target MyOpenGLProject1
+# Link build statements for EXECUTABLE target MyOpenGLProject2
 
 
 #############################################
-# Link the executable MyOpenGLProject1.exe
+# Link the executable MyOpenGLProject2.exe
 
-build MyOpenGLProject1.exe: CXX_EXECUTABLE_LINKER__MyOpenGLProject1_Debug CMakeFiles/MyOpenGLProject1.dir/main.cpp.obj
+build MyOpenGLProject2.exe: CXX_EXECUTABLE_LINKER__MyOpenGLProject2_Debug CMakeFiles/MyOpenGLProject2.dir/main.cpp.obj
   FLAGS = -g
-  LINK_LIBRARIES = -lglfw3  -lfreeglut  -lopengl32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = -lglfw3  -lfreeglut  -lopengl32  -lglu32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   LINK_PATH = -LC:/Users/User/glfw-3.4.bin.WIN64/lib-mingw-w64   -LC:/Users/User/freeglut/lib
-  OBJECT_DIR = CMakeFiles\MyOpenGLProject1.dir
+  OBJECT_DIR = CMakeFiles\MyOpenGLProject2.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = MyOpenGLProject1.exe
-  TARGET_IMPLIB = libMyOpenGLProject1.dll.a
-  TARGET_PDB = MyOpenGLProject1.exe.dbg
+  TARGET_FILE = MyOpenGLProject2.exe
+  TARGET_IMPLIB = libMyOpenGLProject2.dll.a
+  TARGET_PDB = MyOpenGLProject2.exe.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\User\CLionProjects\function1OpenGl\cmake-build-debug && C:\Users\User\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\CLionProjects\function2OpenGl\cmake-build-debug && C:\Users\User\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -91,7 +91,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\User\CLionProjects\function1OpenGl\cmake-build-debug && C:\Users\User\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\User\CLionProjects\function1OpenGl -BC:\Users\User\CLionProjects\function1OpenGl\cmake-build-debug"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\CLionProjects\function2OpenGl\cmake-build-debug && C:\Users\User\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SD:\CLionProjects\function2OpenGl -BD:\CLionProjects\function2OpenGl\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -101,7 +101,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build MyOpenGLProject1: phony MyOpenGLProject1.exe
+build MyOpenGLProject2: phony MyOpenGLProject2.exe
 
 # =============================================================================
 # Folder targets.
@@ -109,9 +109,9 @@ build MyOpenGLProject1: phony MyOpenGLProject1.exe
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/User/CLionProjects/function1OpenGl/cmake-build-debug
+# Folder: D:/CLionProjects/function2OpenGl/cmake-build-debug
 
-build all: phony MyOpenGLProject1.exe
+build all: phony MyOpenGLProject2.exe
 
 # =============================================================================
 # Built-in targets
@@ -120,14 +120,14 @@ build all: phony MyOpenGLProject1.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeRCInformation.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-windres.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake C$:/Users/User/CLionProjects/function1OpenGl/CMakeLists.txt CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeRCCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeRCInformation.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-windres.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeRCCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake D$:/CLionProjects/function2OpenGl/CMakeLists.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeRCInformation.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-windres.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake C$:/Users/User/CLionProjects/function1OpenGl/CMakeLists.txt CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeRCCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake: phony
+build C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeRCInformation.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-windres.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows.cmake C$:/Users/User/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeRCCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake D$:/CLionProjects/function2OpenGl/CMakeLists.txt: phony
 
 
 #############################################
